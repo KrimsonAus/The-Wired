@@ -351,7 +351,7 @@ TextureImporter:
         width: 150
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,6 +360,72 @@ TextureImporter:
       bones: []
       spriteID: 7bef8af38f5c2432db048f80c81f5312
       internalID: -352100562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLEDIT_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 92
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82e0938d32180e97989e17fbb355922
+      internalID: -672781886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLEDIT_12
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 42
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24377e362309e5510b934dd7ce2755e3
+      internalID: -1608366732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLEDIT_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 119
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c190be7b6db5970a848739c7200dc4
+      internalID: 85062182
       vertices: []
       indices: 
       edges: []
@@ -381,6 +447,9 @@ TextureImporter:
       PLEDIT_0: -156431452
       PLEDIT_1: 64331647
       PLEDIT_10: -352100562
+      PLEDIT_11: -672781886
+      PLEDIT_12: -1608366732
+      PLEDIT_13: 85062182
       PLEDIT_2: 1219236078
       PLEDIT_3: 1559557938
       PLEDIT_4: -522054814

@@ -45,7 +45,7 @@ public class WorldInterpreter : MonoBehaviour
         {
             float time = DateTime.Now.Millisecond;
             await LoadPlace(path);
-            print("loaded in " + (DateTime.Now.Millisecond - time) + "ms.");
+            //print("loaded in " + (DateTime.Now.Millisecond - time) + "ms.");
             loadScreen.SetActive(false);
         }
         else
@@ -66,10 +66,10 @@ public class WorldInterpreter : MonoBehaviour
         {
             index++;
             string[] words = line.Split(" ");
-            print(words[0]);
+            //print(words[0]);
             if (words[0].ToCharArray()[0] == '/' && words[0].ToCharArray()[1] == '/')
             {
-                print("NOTE");
+                //print("NOTE");
                 continue;
             }
 
@@ -109,7 +109,7 @@ public class WorldInterpreter : MonoBehaviour
                     //new Material(Shader.Find("TextMeshPro/Mobile/Distance Field"));
                     break;
                 case "settings":
-                    print(bool.Parse(words[1]));
+                    //print(bool.Parse(words[1]));
                     if (bool.Parse(words[1]))
                     {
                         Camera.main.transform.parent.GetComponent<CamController>().enabled = true;
@@ -124,9 +124,15 @@ public class WorldInterpreter : MonoBehaviour
                     }
 
                     break;
+                case "radio":
+                    FindFirstObjectByType<Radio>().url = words[7];
+                    obj.transform.position =
+                        new Vector3(float.Parse(words[1]), float.Parse(words[2]), float.Parse(words[3]));
+                    obj.transform.eulerAngles = new Vector3(float.Parse(words[4]), float.Parse(words[5]), float.Parse(words[6]));
+                    break;
             }
 
-            if (words[0] != "settings")
+            if (words[0] != "settings" || words[0] != "radio")
             {
                 obj.transform.position =
                     new Vector3(float.Parse(words[1]), float.Parse(words[2]), float.Parse(words[3]));
@@ -164,8 +170,8 @@ public class WorldInterpreter : MonoBehaviour
 
                 Debug.Log(line);
             }
-            
-            print("loaded obj [" + index +"]");
+
+            //print("loaded obj [" + index +"]");
             loader.value = index;
             loadedNumText.text = index + "/" + loader.maxValue;
             if (index % 100 == 0)

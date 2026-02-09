@@ -8,3 +8,4 @@ text 0 2 0 0 0 0 1 1 1 0 0 0 :Use;WASD;to;Move... 6
 text 0 2 5 0 0 0 1 1 1 1 0.5 0 :Also;use;mouse;to;look;around. 7
 sphere 0 2 10 0 0 0 1 1 1 0 1 0
 text 0 2.6 10 0 0 0 0.3 0.3 0.3 0 1 0 :Look,;a;green;sphere!!! 10
+radio 0 0 0 0 0 0 https://ia803104.us.archive.org/20/items/MACINTOSHPLUS-FLORALSHOPPE_complete/01%20%E3%83%96%E3%83%BC%E3%83%88.mp3
